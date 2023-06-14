@@ -1,0 +1,26 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Build_SCM') {
+            steps {
+                echo 'Building project'
+            }
+        }
+        stage('Test_SCM') {
+            steps {
+                echo 'Testing project'
+            }
+        }
+        stage('Deploy_SCM') {
+            steps {
+                echo 'Deploying project'
+            }
+        }
+        stage('Release_SCM') {
+            steps {
+                echo 'Ready to release'
+            }
+        }
+    }
+}
